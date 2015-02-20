@@ -1,7 +1,7 @@
 # MySikuliExample
 My Sikuli Example (with Maven)
 
-Motivated by the example setup by Paul Hammant at the origin of this fork, 
+Motivated by the example setup by Paul Hammant at the origin of this fork,<br>
 I modified it a bit to make extensive use of 1.1.0 features and really be in the Maven default structure:
 
 Main points:
@@ -11,6 +11,6 @@ Main points:
  * made the row clicks in a loop using calculated offset including the final deselect
  * uses Debug.user to print messages
  
-The original is set up as testcase. 
-I switched it to a normal run (was easier for me to debug and test ;-), 
+The original is set up as testcase.<br>
+I switched it to a normal run (was easier for me to debug and test ;-), <br>
 so the final test for success is done with an if-exists-success/else-fault.
