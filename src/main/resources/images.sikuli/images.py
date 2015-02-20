@@ -1,0 +1,2 @@
+"pompei.png"
+"pompeiRowOfZeros.png"
