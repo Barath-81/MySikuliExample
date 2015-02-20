@@ -14,13 +14,13 @@ import org.sikuli.script.Pattern;
 public class MySikuliTest {
 
     public static void main(String[] args) throws FindFailed {
-        String browser = "Google Chrome";
+        String browser = "Safari";
         Debug.user("[STARTING] running test with %s", browser);
         Debug.on(0);
         Settings.ActionLogs = false;
         Settings.InfoLogs = false;
         
-        ImagePath.add("my.sikuli.example.MySikuliTest/images");
+        ImagePath.add("my.sikuli.example.MySikuliTest/images.sikuli");
         Screen screen = new Screen();
         String image1 = "pompei";
         Match pompei = startBrowserOpenLinkWaitForImage(browser, "http://currentlabel.co.uk/flexuscalculus/", image1, 20);
@@ -37,7 +37,7 @@ public class MySikuliTest {
         screen.click(pompei.offset(clickAt,0));
 
         // check that all fields are set to 0
-        if (null == screen.exists(new Pattern("pompeiRowOfZeros").exact(), 0)) {
+        if (null == screen.exists(new Pattern("pompeiRowOfZeros").exact())) {
           Debug.user("[ERROR] did not work");
           System.exit(1);
         }
